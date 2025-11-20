@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Home Services</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f0f4f8;
+    }
+    header {
+        background: #0066cc;
+        padding: 15px;
+        text-align: center;
+        color: white;
+        font-size: 22px;
+    }
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+        background: white;
+        margin-top: 20px;
+        border-radius: 8px;
+    }
+    .service-box {
+        padding: 15px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .service-title {
+        font-weight: bold;
+    }
+    button {
+        padding: 8px 14px;
+        background: #28a745;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #218838;
+    }
+</style>
+
+</head>
+<body>
+
+<header>Smart Home Services</header>
+
+<div class="container">
+    <h2>Available Services</h2>
+
+    <div class="service-box">
+        <div class="service-title">Electrician</div>
+        <p>₹150 – ₹250</p>
+        <button onclick="book('Electrician')">Book Now</button>
+    </div>
+
+    <div class="service-box">
+        <div class="service-title">Plumber</div>
+        <p>₹150 – ₹300</p>
+        <button onclick="book('Plumber')">Book Now</button>
+    </div>
+
+    <div class="service-box">
+        <div class="service-title">Home Cleaning</div>
+        <p>₹500 – ₹1200</p>
+        <button onclick="book('Home Cleaning')">Book Now</button>
+    </div>
+</div>
+
+<script>
+function book(service) {
+    alert("You have selected: " + service + "\nBooking feature is demo only.");
+}
+</script>
+
+</body>
+</html>
