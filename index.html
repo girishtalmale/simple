@@ -34,4 +34,144 @@
         margin: 5px;
     }
     .btn:hover { background: #1f7e35; }
+    .section {
+        background: white;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        display: none;
+    }
+    details {
+        background: #f8f9fa;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 6px;
+    }
+    summary {
+        font-size: 18px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+    td, th {
+        border: 1px solid #ccc;
+        padding: 8px;
+    }
+    th {
+        background: #0077cc;
+        color: white;
+    }
+</style>
+</head>
+<body>
+
+<header>Smart Integrated Home Services</header>
+
+<div class="container">
+
+    <!-- Front Buttons -->
+    <button class="btn" onclick="showSection('takeService')">Take Service</button>
+    <button class="btn" onclick="showSection('giveService')">Give Service</button>
+
+    <!-- TAKE SERVICE SECTION -->
+    <div id="takeService" class="section">
+        <h2>Take a Service</h2>
+
+        <!-- CATEGORY 1 -->
+        <details>
+            <summary>1. Home Repair & Maintenance</summary>
+            <table>
+                <tr><th>Service</th><th>Charges (₹)</th></tr>
+                <tr><td>Carpenter (minor work)</td><td>150–300</td></tr>
+                <tr><td>Carpenter (per hour)</td><td>200–350/hr</td></tr>
+                <tr><td>Plumber (minor fix)</td><td>150–300</td></tr>
+                <tr><td>Electrician (minor work)</td><td>150–250</td></tr>
+                <tr><td>AC Service</td><td>400–700</td></tr>
+                <tr><td>AC Repair (Gas refill)</td><td>1500–2200</td></tr>
+                <tr><td>Fridge Repair</td><td>200–400</td></tr>
+                <tr><td>Washing Machine Repair</td><td>200–400</td></tr>
+                <tr><td>RO Service</td><td>300–500</td></tr>
+                <tr><td>Painter (labour)</td><td>8–15 per sq.ft</td></tr>
+                <tr><td>Mason</td><td>400–700/day</td></tr>
+                <tr><td>Welder</td><td>300–500</td></tr>
+                <tr><td>Gardener</td><td>200–400</td></tr>
+                <tr><td>Pest Control</td><td>700–1200</td></tr>
+            </table>
+        </details>
+
+        <!-- CATEGORY 2 -->
+        <details>
+            <summary>2. Home Cleaning Services</summary>
+            <table>
+                <tr><th>Service</th><th>Charges (₹)</th></tr>
+                <tr><td>Regular Home Cleaning</td><td>500–1200</td></tr>
+                <tr><td>Deep Cleaning (1BHK)</td><td>1500–3000</td></tr>
+                <tr><td>Bathroom Cleaning</td><td>300–600</td></tr>
+                <tr><td>Kitchen Cleaning</td><td>500–900</td></tr>
+                <tr><td>Sofa Cleaning</td><td>500–1200</td></tr>
+                <tr><td>Carpet Cleaning</td><td>10–20 per sq.ft</td></tr>
+                <tr><td>Mattress Cleaning</td><td>500–1000</td></tr>
+                <tr><td>Water Tank Cleaning</td><td>300–800</td></tr>
+            </table>
+        </details>
+
+        <!-- CATEGORY 3 -->
+        <details>
+            <summary>3. Appliances & Electronics</summary>
+            <table>
+                <tr><th>Service</th><th>Charges (₹)</th></tr>
+                <tr><td>TV Installation</td><td>200–400</td></tr>
+                <tr><td>TV Repair</td><td>200–400</td></tr>
+                <tr><td>CCTV Installation</td><td>1000–2500</td></tr>
+                <tr><td>Inverter/Battery Service</td><td>200–400</td></tr>
+                <tr><td>Computer/Laptop Repair</td><td>300–600</td></tr>
+                <tr><td>Wi-Fi Router Setup</td><td>150–300</td></tr>
+                <tr><td>Smart Home Setup</td><td>500–1000</td></tr>
+            </table>
+        </details>
+
+        <!-- CATEGORY 4 -->
+        <details>
+            <summary>4. Household Help</summary>
+            <table>
+                <tr><th>Service</th><th>Charges (₹)</th></tr>
+                <tr><td>Maid (per hour)</td><td>150–250</td></tr>
+                <tr><td>Maid (monthly – part time)</td><td>1500–3000</td></tr>
+                <tr><td>Full-time Maid</td><td>8000–15000</td></tr>
+                <tr><td>Cook (one time)</td><td>150–300</td></tr>
+                <tr><td>Monthly Cook</td><td>1500–4000</td></tr>
+                <tr><td>Babysitter (per hour)</td><td>150–300</td></tr>
+                <tr><td>Babysitter (monthly)</td><td>6000–12000</td></tr>
+                <tr><td>Elderly Caregiver</td><td>10000–18000</td></tr>
+                <tr><td>Laundry/Ironing</td><td>10–20 per cloth</td></tr>
+            </table>
+        </details>
+
+        <!-- All other categories follow the same structure -->
+
+        <p style="margin-top:20px; font-weight:bold;">Click any category to view charges.</p>
+    </div>
+
+    <!-- GIVE SERVICE SECTION -->
+    <div id="giveService" class="section">
+        <h2>Register as Service Provider</h2>
+        <p>Coming Soon…</p>
+    </div>
+
+</div>
+
+<script>
+function showSection(id) {
+    document.getElementById('takeService').style.display = "none";
+    document.getElementById('giveService').style.display = "none";
+    document.getElementById(id).style.display = "block";
+}
+</script>
+
+</body>
+</html>
 
